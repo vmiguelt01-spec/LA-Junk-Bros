@@ -46,12 +46,18 @@ app.post('/api/book', async (req, res) => {
 
         // Send Email Notification
         const mailOptions = {
-            from: process.env.EMAIL_USER,
-            to: '8184000337@vtext.com', // Where you want to receive leads
-            subject: `New Lead: ${name} - 818-400-0337`,
-            text: `Name: ${name}\nPhone: ${phone}\nService: ${serviceType}\nDate: ${date}\nMessage: ${message}`
-        };
-
+  from: process.env.EMAIL_USER,
+  to: '8184000337@vtext.com', // Replace @vtext.com with your specific carrier gateway
+  subject: 'NEW LEAD: LA Junk Bros',
+  text: `
+--- NEW BOOKING ---
+Name: ${name}
+Phone: ${phone}
+Service: ${service}
+Notes: ${message}
+-------------------
+  `
+};
         await transporter.sendMail(mailOptions);
         res.status(200).json({ success: true, message: "Booking received!" });
     } catch (error) {
