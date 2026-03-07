@@ -47,7 +47,7 @@ app.post('/api/book', async (req, res) => {
         // Send Email Notification
         const mailOptions = {
   from: process.env.EMAIL_USER,
-  to: '8184000337@vtext.com', // Replace @vtext.com with your specific carrier gateway
+  to: '8184000337@vtext.com',
   subject: 'NEW LEAD: LA Junk Bros',
   text: `
 --- NEW BOOKING ---
