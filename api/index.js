@@ -49,7 +49,7 @@ app.post('/api/book', async (req, res) => {
   from: process.env.EMAIL_USER,
   to: '8184000337@vtext.com',
   subject: 'NEW LEAD: LA Junk Bros',
-  text: `
+  text: `-------------
 Name: ${name}
 Phone: ${phone}
 Service: ${serviceType}
