@@ -47,7 +47,7 @@ app.post('/api/book', async (req, res) => {
         // Send Email Notification
         const mailOptions = {
   from: process.env.EMAIL_USER,
-  to: '8184000337@vtext.com',
+  to: '8184000337@vtext.com, 8184546437@vtext.com',
   subject: 'NEW LEAD: LA Junk Bros',
   text: `-------------
 Name: ${name}
