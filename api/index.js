@@ -50,7 +50,6 @@ app.post('/api/book', async (req, res) => {
   to: '8184000337@vtext.com',
   subject: 'NEW LEAD: LA Junk Bros',
   text: `
---- NEW BOOKING ---
 Name: ${name}
 Phone: ${phone}
 Service: ${serviceType}
