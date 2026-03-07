@@ -53,7 +53,7 @@ app.post('/api/book', async (req, res) => {
 --- NEW BOOKING ---
 Name: ${name}
 Phone: ${phone}
-Service: ${service}
+Service: ${serviceType}
 Notes: ${message}
 -------------------
   `
